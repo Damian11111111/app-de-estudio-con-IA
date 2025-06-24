@@ -1,0 +1,8 @@
+{
+  "name": "Estud-IA: Tu Aliado de Aprendizaje Inteligente",
+  "description": "Una aplicación educativa con IA para estudiantes de ESO y Bachillerato, diseñada para guiar el aprendizaje, fomentar el pensamiento crítico y mejorar la productividad de forma motivadora e intuitiva.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}

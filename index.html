@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Estud-IA: Tu Aliado de Aprendizaje Inteligente</title>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+  <link
+    rel="stylesheet"
+    as="style"
+    onload="this.rel='stylesheet'"
+    href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Plus+Jakarta+Sans%3Awght%40400%3B500%3B700%3B800"
+  />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script type="importmap">
+  {
+    "imports": {
+      "react": "https://esm.sh/react@^19.1.0",
+      "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+      "react-router-dom": "https://esm.sh/react-router-dom@^7.6.2",
+      "react/": "https://esm.sh/react@^19.1.0/",
+      "react-markdown": "https://esm.sh/react-markdown@^10.1.0",
+      "recharts": "https://esm.sh/recharts@^3.0.0",
+      "@google/genai": "https://esm.sh/@google/genai@^1.6.0"
+    }
+  }
+  </script>
+  <style>
+    body {
+      font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;
+      background-color: #F0F2F5; /* Light mode default background */
+      color: #1F2937; /* Light mode default text */
+      margin: 0;
+      padding: 0;
+    }
+    html.dark body {
+      background-color: #101a23; /* Dark mode background from new design */
+      color: #FFFFFF; /* Dark mode default text */
+    }
+    /* Define CSS variables for Tailwind to use (or use directly in components) */
+    :root {
+      --color-background-light: #F0F2F5; /* A light grey for light mode */
+      --color-card-light: #FFFFFF;
+      --color-text-primary-light: #171A1FFF; /* Darker text for light mode */
+      --color-text-secondary-light: #565E6CFF; /* Greyer text for light mode */
+      --color-border-light: #DDE1E6FF;
+      
+      --color-primary: #0c7ff2; /* Stitch Blue */
+      --color-primary-dark: #3b82f6; /* Stitch Blue slightly lighter for dark mode if needed, or same */
+      --color-secondary: #ec4899; /* Pink */
+      --color-accent: #8b5cf6; /* Purple */
+
+      --color-primary-text-light: #FFFFFF;
+      --color-primary-text-dark: #FFFFFF; 
+    }
+    html.dark {
+      --color-background-dark: #101a23;
+      --color-card-dark: #182634; /* Card background from Stitch */
+      --color-text-primary-dark: #FFFFFF;
+      --color-text-secondary-dark: #90adcb; /* Text secondary from Stitch */
+      --color-border-dark: #223649; /* Border from Stitch */
+    }
+
+    #root {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+  </style>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
